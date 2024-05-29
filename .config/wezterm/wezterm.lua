@@ -8,12 +8,10 @@ if wezterm.config_builder then
 end
 
 local color_scheme = "Batman"
--- local font = "Hack Nerd Font Mono"
 local font_size = 12
-local font_weight = "Regular"
 
 config.color_scheme = color_scheme
--- config.font = wezterm.font(font, { weight = font_weight })
+config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 config.font_size = font_size
 config.use_fancy_tab_bar = false
 config.window_padding = {
