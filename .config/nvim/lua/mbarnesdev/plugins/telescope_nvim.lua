@@ -31,6 +31,9 @@ return {
           "^.git/",
           "^vendor/",
           "^node_modules/",
+          "^deps/",
+          "^_build/",
+          "^.elixir_ls/",
         },
         path_display = {
           "truncate ",
