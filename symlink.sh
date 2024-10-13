@@ -17,3 +17,4 @@ create_symlink "$DOTFILES_DIR/i3" ~/.config/i3
 create_symlink "$DOTFILES_DIR/nvim" ~/.config/nvim
 create_symlink "$DOTFILES_DIR/tmux" ~/.config/tmux
 create_symlink "$DOTFILES_DIR/wezterm" ~/.config/wezterm
+create_symlink "$DOTFILES_DIR/git/.gitconfig" ~/.gitconfig
