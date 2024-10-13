@@ -1,4 +1,5 @@
 vim.opt.guicursor = ""
+vim.opt.cursorline = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 4
@@ -20,3 +21,11 @@ vim.opt.isfname:append "@-@"
 vim.opt.updatetime = 1000
 vim.opt.mouse = ""
 vim.opt.clipboard = "unnamedplus"
+vim.opt.list = true
+vim.opt.listchars = {
+	eol = "↲",
+	tab = "» ",
+	trail = "·",
+	extends = "<",
+	precedes = ">",
+}
