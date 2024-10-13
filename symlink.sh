@@ -13,6 +13,7 @@ create_symlink() {
     ln -s "$SRC" "$DEST"
 }
 
+# create_symlink "$DOTFILES_DIR/zsh/.zshrc" ~/.zshrc
 create_symlink "$DOTFILES_DIR/i3" ~/.config/i3
 create_symlink "$DOTFILES_DIR/nvim" ~/.config/nvim
 create_symlink "$DOTFILES_DIR/tmux" ~/.config/tmux
