@@ -4,6 +4,13 @@ return {
 		require("conform").setup {
 			formatters_by_ft = {
 				lua = { "stylua" },
+				go = { "gofmt" },
+				html = { "prettierd" },
+				json = { "prettierd" },
+				javascript = { "prettierd", stop_after_first = true },
+				javascriptreact = { "prettierd", stop_after_first = true },
+				typescript = { "prettierd", stop_after_first = true },
+				typescriptreact = { "prettierd", stop_after_first = true },
 			},
 			format_on_save = {
 				timeout_ms = 500,
