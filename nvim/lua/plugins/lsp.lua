@@ -11,6 +11,8 @@ return {
 			require("mason-lspconfig").setup {
 				ensure_installed = {
 					"lua_ls",
+					"gopls",
+					"ts_ls",
 				},
 				automatic_installation = true,
 			}
@@ -46,6 +48,18 @@ return {
 						},
 					},
 				},
+			}
+
+			lspconfig.gopls.setup {
+				on_attach = on_attach,
+			}
+
+			lspconfig.ts_ls.setup {
+				on_attach = on_attach,
+			}
+
+			lspconfig.tailwindcss.setup {
+				on_attach = on_attach,
 			}
 		end,
 	},
